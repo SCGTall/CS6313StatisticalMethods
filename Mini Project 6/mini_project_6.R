@@ -128,6 +128,7 @@ qqline(resid(fit4))
 maxabs = max(abs(resid(fit4)))
 plot(index, resid(fit4), type='l', main="Time series plot",
      ylim=maxabs*c(-1, 1))
+abline(h=0)
 
 # 6) Predict the PSA level for a "common average" patient
 summary(fit4)
